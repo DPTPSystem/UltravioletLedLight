@@ -4,7 +4,7 @@
 * PIC: PIC12F683
 * Fórdító:  HI-TECH C for PIC10/12/16
 
-![DPTP System levilágító]( "DPTP System levilágító")
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-04_19_58_42.jpg "DPTP System levilágító")
 
 # Miért
 Az elképzelés azon okból kifolyólag született meg bennem, hogy az eddig a rézfelületre vasalós technikával felvitt nyákrajzolatok, -
@@ -38,25 +38,31 @@ emeljem. A fototechnikás eljárással jelentős mértékben javítható az otth
 # Kapcsolási rajzolat
 Ha megbarátkoztunk az alkatrész listával, akkor nézzük meg a kapcsolás sematikus ábráját, ami csak első látásra lesz kicsit kusza.
 
-![DPTP System levilágító]( "DPTP System levilágító")
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_levilagito_sematik_2.jpg "DPTP System levilágító")
 
 Gondolom a terv különösebb magyarázatot nem igényel, minden adat megtalálható rajta, de ha még is lemaradt valami, akkor arra nyugodtan 
 kérdezzetek rá. A sematikus rajzon a piros üzemjelző LED nem szerepel mivel az opcionális és azt utólag kötöttem be, hogy látható legyen, 
 ha üzem alatt van a készülék. Ez utóbbiról már most elmondható, hogy hasznos tud lenni.
 
-# Nyáktervek
+# Nyákterv
 Egyoldalú SMD áramkör.
 Látható, hogy a relé (kép bal oldalán) és a buzzer (jobb oldali kör) furat szerelt kivitelű, ez a két alkatrész a nyák túloldalára kerül, 
 melyek a kapcsolás legnagyobb alkatói. A rajzolatot most pont úgy látjuk ahogyan majd vasalás után is látni kell, tehát kinyomtatás előtt
 tükrözni kell.
 
-![DPTP System levilágító]( "DPTP System levilágító")
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_levilagito_nyakterv.jpg "DPTP System levilágító")
 
 # PCB elkészítése
 A nyák rajzolatot ezúttal még vasalós technikával vittem fel a rézfelületre, amely most hiba nélkül sikerűt. A vasalós technikáról nem írnék 
 most semmit, feltételezve, hogy minimum ismered ezt a módszert.
 
-![DPTP System levilágító]( "DPTP System levilágító")
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-03_14_59_48.jpg "DPTP System levilágító")
+
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-03_15_23_24.jpg "DPTP System levilágító")
+
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-03_16_31_40.jpg "DPTP System levilágító")
+
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-03_18_23_43.jpg "DPTP System levilágító")
 
 # Hardver
 Mind eközben a szkennert is kipucoltam, gyakorlatilag mindent kiszereltem belőle kivéve a gombsort, amelyről a szükséges kábelek beforrasztásával 
@@ -66,7 +72,11 @@ vágása, amely 6x18db LED-et tartalmaz. A LED sorok beragasztása elött öntap
 fel a csíkokat, a párhuzam tartása miatt filccel feljelöltem a csíkok helyét. Az UV szalagok eleje és vége alá kapton szalagot ragasztottam, hogy 
 elkerüljem az esetleges rövidzárlatokat az aluborítás miatt.
 
-![DPTP System levilágító]( "DPTP System levilágító")
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-01_15_21_21.jpg "DPTP System levilágító")
+
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-05_20_52_10.jpg "DPTP System levilágító")
+
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-01_16_44_05.jpg "DPTP System levilágító")
 
 # Program
 Pontosan ugyanolyan egyszerű, mint maga a kapcsolás. Első indulásnál be kell állítani a levilágításhoz szükséges időt. Ezt úgy tehetjük meg,
