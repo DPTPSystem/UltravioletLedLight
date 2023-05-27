@@ -4,7 +4,7 @@
 * PIC: PIC12F683
 * Fórdító:  HI-TECH C for PIC10/12/16
 
-![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/master/images/131744_2014-12-04_19_58_42.jpg "DPTP System levilágító")
+![DPTP System levilágító](https://github.com/DPTPSystem/UltravioletLedLight/blob/master/images/131744_2014-12-04_19_58_42.jpg "DPTP System levilágító")
 
 # Miért
 Az elképzelés azon okból kifolyólag született meg bennem, hogy az eddig a rézfelületre vasalós technikával felvitt nyákrajzolatok, -
