@@ -1,0 +1,130 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"6 C:\Users\DPTP\Dropbox\PIC_Programozas\P12F683\levilagito\functions.c
+[v ___delay_ms `(i 0 ef ]
+"2 C:\Users\DPTP\Dropbox\PIC_Programozas\P12F683\levilagito\functions.c
+[v _Buzzer `(v 1 ef1`uc ]
+{
+[; ;functions.c: 2: void Buzzer(unsigned char jelszam){
+[e :U _Buzzer ]
+[v _jelszam `uc 1 r1 ]
+[f ]
+"3
+[v _i `uc 1 a ]
+[; ;functions.c: 3: unsigned char i;
+[; ;functions.c: 4: for(i=0; i<jelszam; i++){
+"4
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 5  ]
+[e :U 2 ]
+{
+[; ;functions.c: 5: BUZZER = 1;
+[v _BUZZER `i 1 s ]
+"5
+[e = _BUZZER -> 1 `i ]
+[; ;functions.c: 6: __delay_ms(500);
+"6
+[e ( ___delay_ms -> 500 `i ]
+[; ;functions.c: 7: BUZZER = 0;
+"7
+[e = _BUZZER -> 0 `i ]
+[; ;functions.c: 8: __delay_ms(500);
+"8
+[e ( ___delay_ms -> 500 `i ]
+"9
+}
+"4
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 5 ]
+[e $ < -> _i `i -> _jelszam `i 2  ]
+[e :U 3 ]
+"9
+}
+[; ;functions.c: 9: }
+[; ;functions.c: 10: }
+"10
+[e :UE 1 ]
+}
+"15
+[v _EepromRead `(uc 1 ef ]
+{
+[; ;functions.c: 15: unsigned char EepromRead (void){
+[e :U _EepromRead ]
+[f ]
+"16
+[v _buffer `uc 1 a ]
+[; ;functions.c: 16: unsigned char buffer;
+[; ;functions.c: 17: EEADR = 0;
+[v _EEADR `i 1 s ]
+"17
+[e = _EEADR -> 0 `i ]
+[; ;functions.c: 18: RD = 1;
+[v _RD `i 1 s ]
+"18
+[e = _RD -> 1 `i ]
+[; ;functions.c: 21: buffer = EEDATA;
+[v _EEDATA `i 1 s ]
+"21
+[e = _buffer -> _EEDATA `uc ]
+[; ;functions.c: 22: return buffer;
+"22
+[e ) _buffer ]
+[e $UE 6  ]
+[; ;functions.c: 23: }
+"23
+[e :UE 6 ]
+}
+"28
+[v _EepromWrite `(v 1 ef1`uc ]
+{
+[; ;functions.c: 28: void EepromWrite (unsigned char adat){
+[e :U _EepromWrite ]
+[v _adat `uc 1 r1 ]
+[f ]
+[; ;functions.c: 29: EEADR = 0;
+[v _EEADR `i 1 s ]
+"29
+[e = _EEADR -> 0 `i ]
+[; ;functions.c: 30: EEDATA = adat;
+[v _EEDATA `i 1 s ]
+"30
+[e = _EEDATA -> _adat `i ]
+[; ;functions.c: 31: WREN = 1;
+[v _WREN `i 1 s ]
+"31
+[e = _WREN -> 1 `i ]
+[; ;functions.c: 34: GIE = 0;
+[v _GIE `i 1 s ]
+"34
+[e = _GIE -> 0 `i ]
+[; ;functions.c: 35: EECON2 = 0x55;
+[v _EECON2 `i 1 s ]
+"35
+[e = _EECON2 -> 85 `i ]
+[; ;functions.c: 36: EECON2 = 0xAA;
+"36
+[e = _EECON2 -> 170 `i ]
+[; ;functions.c: 37: WR = 1;
+[v _WR `i 1 s ]
+"37
+[e = _WR -> 1 `i ]
+[; ;functions.c: 40: while (WR == 1);
+"40
+[e $U 8  ]
+[e :U 9 ]
+[e :U 8 ]
+[e $ == _WR -> 1 `i 9  ]
+[e :U 10 ]
+[; ;functions.c: 41: GIE = 1;
+"41
+[e = _GIE -> 1 `i ]
+[; ;functions.c: 42: WREN = 0;
+"42
+[e = _WREN -> 0 `i ]
+[; ;functions.c: 45: }
+"45
+[e :UE 7 ]
+}
+[; ;functions.c: 48: void Buzzer(unsigned char jelszam);
+[; ;functions.c: 49: void EepromWrite (unsigned char adat);
+[; ;functions.c: 50: void EepromWrite (unsigned char adat);

@@ -1,0 +1,48 @@
+
+# 1 "C:\Users\DPTP\Dropbox\PIC_Programozas\P12F683\levilagito\functions.c"
+
+void Buzzer(unsigned char jelszam){
+unsigned char i;
+for(i=0; i<jelszam; i++){
+BUZZER = 1;
+__delay_ms(500);
+BUZZER = 0;
+__delay_ms(500);
+}
+}
+
+# 15
+unsigned char EepromRead (void){
+unsigned char buffer;
+EEADR = 0;
+RD = 1;
+
+
+buffer = EEDATA;
+return buffer;
+}
+
+# 28
+void EepromWrite (unsigned char adat){
+EEADR = 0;
+EEDATA = adat;
+WREN = 1;
+
+
+GIE = 0;
+EECON2 = 0x55;
+EECON2 = 0xAA;
+WR = 1;
+
+
+while (WR == 1);
+GIE = 1;
+WREN = 0;
+
+
+}
+
+
+void Buzzer(unsigned char jelszam);
+void EepromWrite (unsigned char adat);
+void EepromWrite (unsigned char adat);
