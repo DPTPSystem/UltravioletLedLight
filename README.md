@@ -1,4 +1,4 @@
-# AirSoldering
+# Ultraviolet LED Light
 * DPTP SYSTEM - Levilágító vezérlés
 * Készült:   2014 December 5 Péntek
 * PIC: PIC12F683
